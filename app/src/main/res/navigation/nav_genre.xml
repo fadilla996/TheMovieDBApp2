@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_genre"
+    app:startDestination="@id/genreFragment">
+
+    <fragment
+        android:id="@+id/genreFragment"
+        android:name="id.iglo.themoviedbapp.fragment.genre.GenreFragment"
+        android:label="GenreFragment" >
+        <action
+            android:id="@+id/toDiscover"
+            app:destination="@id/discoverMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/discoverMovieFragment"
+        android:name="id.iglo.themoviedbapp.fragment.movie.discover_movie.DiscoverMovieFragment"
+        android:label="DiscoverMovieFragment">
+        <argument
+            android:name="genre"
+            app:argType="string"/>
+        <action
+            android:id="@+id/toMovieDetail"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="id.iglo.themoviedbapp.fragment.movie.movie_detail.MovieDetailFragment"
+        android:label="MovieDetailFragment">
+        <argument
+            android:name="movie"
+            app:argType="integer"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TheMovieDBApp</string>
+    <string name="choose_movie_genre">Choose Movie Genre</string>
+    <string name="retry">RETRY</string>
+    <string name="choose_movie">Choose Movie</string>
+    <string name="movie_trailer">Movie Trailer</string>
+    <string name="overview">Overview</string>
+    <string name="genre">Genre</string>
+    <string name="vote">Vote Average</string>
+    <string name="movie_review">Movie Review</string>
+    <string name="vote_count">Vote Count</string>
+</resources>
